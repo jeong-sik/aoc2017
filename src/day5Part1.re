@@ -26,6 +26,7 @@ module Exit {
       }
   }
 
+  // enhancer를 어떻게 해볼까 
   let rec play = (t, ~enhancer=?, ()) => {
     switch (isExit(t)) {
       | true => t

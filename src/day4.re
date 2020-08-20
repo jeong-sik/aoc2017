@@ -10,7 +10,7 @@ let check = line => {
 let input = Node.Fs.readFileAsUtf8Sync("day4.input")
   ->Js.String2.split("\n")
   ->Array.map(line => Js.String2.split(line, " ")->check)
-  ->Array.keep(v => v == true)
+  ->Array.keep(v => v)
   ->Array.length
 
 // part1
